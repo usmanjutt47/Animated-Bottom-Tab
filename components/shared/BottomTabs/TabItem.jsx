@@ -12,7 +12,7 @@ import usePath from "../../../hooks/usePath";
 import { SCREEN_WIDTH } from "../../../constants/Screen";
 
 const ICON_SIZE = 25;
-const LABEL_WIDTH = SCREEN_WIDTH / 4;
+const LABEL_WIDTH = SCREEN_WIDTH / 2;
 const AnimatedIcon = Animated.createAnimatedComponent(Feather);
 const TabItem = ({ label, icon, index, activeIndex, onTabPress }) => {
   const { curvedPaths } = usePath();
@@ -49,7 +49,7 @@ const TabItem = ({ label, icon, index, activeIndex, onTabPress }) => {
   useEffect(() => {
     animatedActiveIndex.value = activeIndex;
     if (activeIndex === index + 1) {
-      iconColor.value = withTiming("white");
+      iconColor.value = withTiming("#fff");
     } else {
       iconColor.value = withTiming("rgba(128,128,128,0.8)");
     }
