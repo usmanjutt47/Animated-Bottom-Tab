@@ -1,5 +1,4 @@
 import { NavigationContainer } from "@react-navigation/native";
-import { StatusBar } from "expo-status-bar";
 import { StyleSheet } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import BottomTabs from "./containers/BottomTabs";
@@ -7,7 +6,6 @@ import BottomTabs from "./containers/BottomTabs";
 export default function App() {
   return (
     <SafeAreaProvider>
-      <StatusBar />
       <NavigationContainer>
         <BottomTabs />
       </NavigationContainer>
