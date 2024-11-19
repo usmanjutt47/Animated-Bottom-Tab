@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     width: circleContainerSize,
     borderRadius: circleContainerSize,
     height: circleContainerSize,
-    backgroundColor: "#D94934",
+    backgroundColor: "#000",
     justifyContent: "center",
     alignItems: "center",
   },
