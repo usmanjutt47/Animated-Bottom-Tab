@@ -1,4 +1,4 @@
-import React, { FC, useMemo, useState } from "react";
+import React from "react";
 import { StyleSheet, View } from "react-native";
 import Svg, { Path } from "react-native-svg";
 import Animated, {
@@ -14,7 +14,6 @@ import usePath from "../../../hooks/usePath";
 import { getPathXCenter } from "../../../utils/Path";
 import TabItem from "./TabItem";
 import AnimatedCircle from "./AnimatedCircle";
-import { BottomTabBarProps } from "@react-navigation/bottom-tabs";
 
 const AnimatedPath = Animated.createAnimatedComponent(Path);
 export const CustomBottomTab = ({ state, descriptors, navigation }) => {
